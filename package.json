@@ -1,5 +1,5 @@
 {
-  "name": "vredeburg",
+  "name": "yolo infinity 55",
   "version": "2.0.0",
   "description": "A simple starter project to create a blog using Eleventy and Tailwind CSS",
   "scripts": {
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daflh/vredeburg.git"
+    "url": "git+https://github.com/yoloinfinity55/myblog.git"
   },
-  "author": "Dafiul Haq",
+  "author": "Yolo Infinity",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daflh/vredeburg/issues"
+    "url": "https://github.com/yoloinfinity/myblog/issues"
   },
-  "homepage": "https://github.com/daflh/vredeburg#readme",
+  "homepage": "https://github.com/yoloinfinity/myblog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@tailwindcss/typography": "^0.5.9",
