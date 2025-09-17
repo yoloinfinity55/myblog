@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vredeburg',
+  title: 'yoloinfinity55',
   description: 'Eleventy starter project to create a blog',
   keywords: ['eleventy', 'template', 'simple', 'clean'],
   url: 'https://vredeburg.netlify.app', // your site url without trailing slash
