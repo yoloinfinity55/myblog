@@ -1,3 +1,5 @@
+const isProduction = process.env.NODE_ENV === "production";
+
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
@@ -18,6 +20,7 @@ module.exports = (config) => {
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
 
   return {
+    pathPrefix: isProduction ? "/myblog/" : "/",
     dir: {
       input: 'src',
       output: 'dist'
