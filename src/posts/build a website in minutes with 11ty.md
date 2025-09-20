@@ -58,6 +58,7 @@ Plain Markdown is great, but we need a proper HTML structure. Layouts allow you 
 1.  **Create an Includes Folder:** In your `src` directory, create a folder named `_includes`. This is where 11ty looks for layouts by default.
 
 2.  **Create a Base Layout:** Inside `_includes`, create a new file named `base.njk` (we're using the Nunjucks templating language here). This will be our main template.
+{% raw %}
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -73,6 +74,7 @@ Plain Markdown is great, but we need a proper HTML structure. Layouts allow you 
     </body>
     </html>
     ```
+{% endraw %}
     Here, `{{ title }}` is a placeholder for the page title, and `{{ content | safe }}` is where your Markdown content will be injected. The `safe` filter ensures HTML within your content isn't escaped.
 
 3.  **Apply the Layout:** Open `index.md` and add YAML front matter at the very top to specify the layout and title.
@@ -93,6 +95,7 @@ Partials are small, reusable chunks of HTML, perfect for headers and footers.
 
 1.  **Create Partials:** Inside the `_includes` folder, create `header.njk` and `footer.njk`.
 2.  **Include Partials in Layout:** Update `base.njk` to include them.
+{% raw %}
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -110,6 +113,7 @@ Partials are small, reusable chunks of HTML, perfect for headers and footers.
     </body>
     </html>
     ```
+{% endraw %}
     Now every page using `base.njk` will have a consistent header and footer.
 
 ## Styling Your Site with CSS
@@ -119,6 +123,7 @@ A website isn't complete without some styling.
 1.  **Create CSS Folder and Stylesheet:** In your `src` directory, create a `css` folder and add your stylesheet (e.g., `style.css`) inside it.
 
 2.  **Link CSS in Layout:** In `base.njk`, link your stylesheet in the `<head>`.
+{% raw %}
     ```html
     <head>
       <meta charset="UTF-8">
@@ -127,6 +132,7 @@ A website isn't complete without some styling.
       <link rel="stylesheet" href="/css/style.css">
     </head>
     ```
+{% endraw %}
 
 3.  **Copy CSS to Output:** 11ty doesn't process CSS by default. You need to tell it to copy the `css` folder to the output. Update your `.eleventy.js` file:
     ```javascript
@@ -163,6 +169,7 @@ Let's take it a step further by creating a collection of blog posts.
     ```
 
 3.  **Create a Post Layout:** In `_includes`, create `post.njk`. This layout can extend the base layout and add post-specific elements, like conditionally rendering an image.
+{% raw %}
     ```html
     ---
     layout: base.njk
@@ -177,6 +184,7 @@ Let's take it a step further by creating a collection of blog posts.
       </div>
     </article>
     ```
+{% endraw %}
 
 4.  **Add Images:** Create an `images` folder in `src` and place your post images there. Then, update `.eleventy.js` to copy the `images` folder, just like you did for CSS.
     ```javascript
@@ -185,6 +193,7 @@ Let's take it a step further by creating a collection of blog posts.
     ```
 
 5.  **List Posts on the Homepage:** Now, let's list them on `index.md`. 11ty automatically creates a collection for each folder. We can loop through `collections.posts` to display the links.
+{% raw %}
     ```html
     <!-- In index.md -->
     <h2>Blog Posts</h2>
@@ -201,4 +210,4 @@ Let's take it a step further by creating a collection of blog posts.
       {%- endfor -%}
     </ul>
     ```
-    And that's it! You now have a fully functional static site with a blog, built in minutes with 11ty. Give it a try for your next project!
+{% endraw %}
