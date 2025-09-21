@@ -1,12 +1,13 @@
 ---
-title: "Test Post Without Image"
+title: "Test Post With Image"
 description: "This post demonstrates the default thumbnail functionality"
-date: 2024-01-01T12:00
+date: 2025-09-21T12:00
+thumb:windows-7.jpg
 tags: 
     - test
 ---
 
-This is a test post that doesn't have a `thumb` property in its frontmatter. With our new default thumbnail system, this post should automatically display the default "No Image" SVG as its thumbnail both in the post grid and on the individual post page.
+This is a test post that does have a `thumb` property in its frontmatter. With our new default thumbnail system, this post should automatically display the default "No Image" SVG as its thumbnail both in the post grid and on the individual post page.
 
 The default image system works by:
 
