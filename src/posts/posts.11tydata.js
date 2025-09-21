@@ -10,7 +10,7 @@ module.exports = {
         }
         return `/assets/img/${data.thumb}`;
       } else {
-        return false;
+        return '/assets/img/no-image.svg';
       }
     }
   }
