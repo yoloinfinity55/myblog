@@ -1,8 +1,10 @@
 ---
 title: "Build a Website in Minutes with 11ty"
+thumb: "windows-7.jpg"
 description: "A step-by-step guide to setting up a fast, static website using the 11ty static site generator, from initial setup to creating blog collections."
 date: 2025-09-20
 tags: ["11ty", "Static Site Generator", "Web Development", "JavaScript", "Tutorial"]
+
 ---
 
 11ty (Eleventy) is a simple, yet powerful static site generator that transforms your templates and content into a blazing-fast, fully static website. It's known for its flexibility and incredible performance compared to its alternatives. Let's walk through the steps to build a complete website from scratch in just a few minutes.

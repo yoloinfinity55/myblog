@@ -1,4 +1,5 @@
 module.exports = {
+  defaultThumb: "/windows-7.jpg",
   title: 'yolo infinity 55', 
   description: 'Eleventy starter project to create a blog',
   keywords: ['eleventy', 'template', 'simple', 'clean'],
