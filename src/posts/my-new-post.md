@@ -2,7 +2,7 @@
 title: "Test Post With Image"
 description: "This post demonstrates the default thumbnail functionality"
 date: 2025-09-21T12:00
-thumb:windows-7.jpg
+thumb: "much-to-do.jpg"
 tags: 
     - test
 ---
